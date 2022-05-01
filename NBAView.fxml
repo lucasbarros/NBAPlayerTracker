@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NBAViewController">
+   <children>
+      <Label fx:id="myLabel1" alignment="TOP_LEFT" layoutX="7.0" layoutY="5.0" prefHeight="17.0" prefWidth="407.0" text="NBA Player Information" textFill="RED" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutY="18.0" prefHeight="14.0" prefWidth="407.0" />
+      <Circle fill="WHITE" layoutX="393.0" layoutY="14.0" radius="7.0" stroke="#0014ff" strokeType="INSIDE" />
+      <Label fx:id="myLabel2" layoutX="147.0" layoutY="50.0" text="NBA Player Info" textFill="#0200ff">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="myTextField" layoutX="75.0" layoutY="92.0" prefHeight="25.0" prefWidth="215.0" promptText="Enter a NBA Player's name here" />
+      <Button layoutX="290.0" layoutY="92.0" mnemonicParsing="false" onAction="#searchPlayer" text="Search" />
+      <VBox layoutX="23.0" layoutY="145.0" prefHeight="156.0" prefWidth="362.0">
+         <children>
+            <Label fx:id="heightLabel" text="Height:" textFill="#0200ff">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="heightTextField" prefHeight="25.0" prefWidth="190.0" />
+            <Label fx:id="weightLabel" text="Weight:" textFill="#0200ff">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="weightTextField" />
+            <Label fx:id="teamLabel" text="Team:" textFill="#0200ff">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="teamTextField" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
