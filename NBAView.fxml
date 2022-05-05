@@ -16,16 +16,25 @@
          </font>
       </Label>
       <Separator layoutY="18.0" prefHeight="14.0" prefWidth="407.0" />
-      <Circle fill="WHITE" layoutX="393.0" layoutY="14.0" radius="7.0" stroke="#0014ff" strokeType="INSIDE" />
-      <Label fx:id="myLabel2" layoutX="147.0" layoutY="50.0" text="NBA Player Info" textFill="#0200ff">
+      <Circle fill="RED" layoutX="393.0" layoutY="14.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#002fff" layoutX="373.0" layoutY="14.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="myLabel2" contentDisplay="CENTER" layoutX="147.0" layoutY="53.0" text="NBA Player Info" textAlignment="CENTER" textFill="#0200ff">
          <font>
             <Font name="Franklin Gothic Medium Cond" size="20.0" />
          </font>
       </Label>
-      <Button layoutX="120.0" layoutY="102.0" mnemonicParsing="false" onAction="#searchPlayer" prefHeight="80.0" prefWidth="167.0" text="CLICK!" />
-      <VBox layoutX="24.0" layoutY="182.0" prefHeight="187.0" prefWidth="362.0">
+      <Button layoutX="120.0" layoutY="88.0" mnemonicParsing="false" onAction="#searchPlayer" prefHeight="80.0" prefWidth="167.0" text="CLICK!" textFill="RED">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="36.0" />
+         </font></Button>
+      <VBox layoutX="50.0" layoutY="182.0" prefHeight="244.0" prefWidth="307.0">
          <children>
-            <Label fx:id="heightLabel" prefHeight="47.0" prefWidth="364.0" text="Height:" textFill="#0200ff">
+            <Label fx:id="nameLabel" prefHeight="47.0" prefWidth="384.0" text="Name:" textFill="#0200ff">
+               <font>
+                  <Font name="Franklin Gothic Medium Cond" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="heightLabel" prefHeight="47.0" prefWidth="364.0" text="Height:" textFill="RED">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="18.0" />
                </font>
@@ -35,17 +44,19 @@
                   <Font name="Franklin Gothic Medium Cond" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="teamLabel" prefHeight="47.0" prefWidth="387.0" text="Team:" textFill="#0200ff">
+            <Label fx:id="teamLabel" prefHeight="47.0" prefWidth="362.0" text="Team:" textFill="RED">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="nameLabel" prefHeight="47.0" prefWidth="384.0" text="Name:" textFill="#0200ff">
+            <Label fx:id="divisionLabel" prefHeight="47.0" prefWidth="362.0" text="Division:" textFill="#0200ff">
                <font>
                   <Font name="Franklin Gothic Medium Cond" size="18.0" />
                </font>
             </Label>
          </children>
       </VBox>
+      <Circle fill="RED" layoutX="353.0" layoutY="14.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>
+
