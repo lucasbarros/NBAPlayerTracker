@@ -30,18 +30,23 @@ public class NBAViewController {
     private Label weightLabel;
 
     @FXML
-    void searchPlayer(ActionEvent event) {
+    void searchPlayer(ActionEvent event) throws Exception{
          URL url = new URL("https://www.balldontlie.io/api/v1/players/"+ (Math.random()*500));
          Scanner s = new Scanner(url.openStream());
          String rawData = s.nextLine();
          Gson gson = new Gson();
          NBAPlayer data = gson.fromJson(rawData, NBAPlayer.class);
-         //Team NBAteam = gson.fromJson(rawData, Team.class);
-         heightLabel.setText("Height: " + data.height_feet + "ft " + data.height_inches + "in");
-         myLabel2.setText(data.first_name + " " + data.last_name + " Info");
+         //myLabel2.setText(data.first_name + " " + data.last_name + " Info");
          nameLabel.setText("Name: " + data.first_name + " " + data.last_name);
          teamLabel.setText("Team: " + data.team.full_name);
-         weightLabel.setText("Weight: " + data.weight_pounds + "lbs");
+         divisionLabel.setText("Division: " + data.team.division);
+         if(data.height_feet < 1.0){
+            heightLabel.setText("Height is not recorded in API");
+            weightLabel.setText("Weight is not recorded in API");
+         }else{
+            heightLabel.setText("Height: " + data.height_feet + "ft " + data.height_inches + "in");
+            weightLabel.setText("Weight: " + data.weight_pounds + "lbs");
+         }
     }
 
 }
