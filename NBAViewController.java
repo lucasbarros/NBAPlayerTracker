@@ -6,7 +6,10 @@ import java.util.Scanner;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-public class NBAViewController throws Exception {
+public class NBAViewController {
+
+    @FXML
+    private Label divisionLabel;
 
     @FXML
     private Label heightLabel;
