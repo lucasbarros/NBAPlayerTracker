@@ -1,3 +1,5 @@
+/** The NBAMain class is the start code for the actual application. This is what initially
+starts up the app*/
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.fxml.FXML;
